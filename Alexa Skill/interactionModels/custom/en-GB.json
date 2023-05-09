@@ -1,0 +1,124 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "true bus",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "FindBusNum",
+          "slots": [
+            {
+              "name": "destination",
+              "type": "AMAZON.City"
+            }
+          ],
+          "samples": [
+            "How do I get to {destination} ",
+            "What bus can I take to {destination}",
+            "What buses go to {destination}",
+            "What bus do I take to get to {destination}"
+          ]
+        },
+        {
+          "name": "NextBusToArea",
+          "slots": [
+            {
+              "name": "location",
+              "type": "AMAZON.GB_CITY"
+            },
+            {
+              "name": "soucre",
+              "type": "AMAZON.GB_CITY"
+            }
+          ],
+          "samples": [
+            "What time is the next bus to {location} from {soucre}",
+            "How long until the next bus to {location} from {soucre}",
+            "When is the next bus to {location} from {soucre}"
+          ]
+        },
+        {
+          "name": "ArriveByBusToArea",
+          "slots": [
+            {
+              "name": "location",
+              "type": "AMAZON.GB_CITY"
+            },
+            {
+              "name": "time",
+              "type": "AMAZON.TIME"
+            },
+            {
+              "name": "source",
+              "type": "AMAZON.GB_CITY"
+            }
+          ],
+          "samples": [
+            "I want to arrive at {location} from {source} at {time} when should I leave",
+            "If I want to arrive by {time} at {location} from {source} when should I leave",
+            "When should I leave if I wish to arrive at {location} from {source} by {time}"
+          ]
+        },
+        {
+          "name": "HowLongToArriveByBusToArea",
+          "slots": [
+            {
+              "name": "locationA",
+              "type": "AMAZON.GB_CITY"
+            },
+            {
+              "name": "locationB",
+              "type": "AMAZON.GB_CITY"
+            }
+          ],
+          "samples": [
+            "How much time does it take to go from {locationA} to {locationB}",
+            "How long is the journey between {locationA} and {locationB}",
+            "How long is it between {locationA} and {locationB}"
+          ]
+        },
+        {
+          "name": "DepartByBusToArea",
+          "slots": [
+            {
+              "name": "location",
+              "type": "AMAZON.GB_CITY"
+            },
+            {
+              "name": "time",
+              "type": "AMAZON.TIME"
+            },
+            {
+              "name": "source",
+              "type": "AMAZON.GB_CITY"
+            }
+          ],
+          "samples": [
+            "I want to depart to {location} from {source} at {time} when should I leave"
+          ]
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "19"
+}

@@ -1,0 +1,81 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-GB": {
+          "summary": "This application provides you with realtime bus information for all Bus Éireann and Expressway buses in Ireland",
+          "examplePhrases": [
+            "Alexa, ask True Bus what buses go to Bantry?",
+            "What time is the next bus to Grand Parade from Victoria Cross?",
+            "When should I leave if I wish to arrive at Grand Parade from Victoria Cross by 2pm?"
+          ],
+          "keywords": [],
+          "name": "True Bus Ireland",
+          "description": "True Bus Ireland Skill for Amazon Alexa is your go-to source for the latest information on bus schedules and routes in Ireland. \nWith support for both Bus Eireann and Expressway, you can quickly and easily check the schedule for your next bus ride.\n\nFeatures:\nCheck when the next bus arrives at your local stop on any bus route operated by Bus Eireann or Expressway\nGet information on the route, including stops and estimated travel time\nCalculates when you should depart to arrive at your desired destination at your intended time\n\nTo use the True Bus Ireland Skill, simply say \"Alexa, open True Bus\" and follow the prompts to check the bus schedule for your desired route.\nStay informed and never miss a bus again with the Irish Bus Timetables Skill!\n\n**Example queries supported by this Alexa Skill**\n-- \"Alexa ask True Bus what buses go to Macroom\"\n-- \"Alexa ask True Bus what time is the next bus to Mardyke Walk from MTU\"\n-- \"Alexa ask True Bus I want to arrive at Grand Parade from Victoria Cross at 3pm when should I leave\"\n-- \"Alexa ask True Bus I want to depart to Grand Parade from Victoria Cross at 4pm when should I leave\"\n-- \"Alexa ask True Bus How long is the journey between Victoria Cross and Grand Parade\"\n\nPlease note: Remember to say the full official name of the bus stop you are departing and originating from. Otherwise, we will be able to find your bus stop.",
+          "smallIconUri": "file://assets/images/en-GB_smallIconUri.png",
+          "updatesDescription": "Updated description",
+          "largeIconUri": "file://assets/images/en-GB_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "isAvailableWorldwide": false,
+      "testingInstructions": "{\"ask_dist_username\":\"\",\"ask_dist_password\":\"\",\"ask_dist_testing_instructions\":\"Sample Testing Instructions.\"}",
+      "category": "PUBLIC_TRANSPORTATION",
+      "distributionMode": "PUBLIC",
+      "distributionCountries": [
+        "IE",
+        "GB"
+      ]
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:eu-west-1:009299389536:function:d83596b0-0502-4360-b9a1-add4f9bb9328:Release_2"
+        },
+        "interfaces": [],
+        "locales": {},
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:009299389536:function:d83596b0-0502-4360-b9a1-add4f9bb9328:Release_2"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:009299389536:function:d83596b0-0502-4360-b9a1-add4f9bb9328:Release_2"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:009299389536:function:d83596b0-0502-4360-b9a1-add4f9bb9328:Release_2"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "permissions": [
+      {
+        "name": "alexa::devices:all:geolocation:read"
+      }
+    ],
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "en-GB": {
+          "privacyPolicyUrl": "https://wawa-byte.github.io/#"
+        }
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "shoppingKit": {
+        "isShoppingActionsEnabled": false,
+        "isAmazonAssociatesOnAlexaEnabled": false
+      },
+      "usesPersonalInfo": false
+    }
+  }
+}
